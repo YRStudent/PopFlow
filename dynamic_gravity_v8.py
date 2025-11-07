@@ -602,7 +602,7 @@ class DynamicGravityIndicator(BaseAlgorithm):
 
 if __name__ == "__main__":
     # 测试代码
-    filepath = r"E:\三合力通\算法商店\算法开发\Example\test_data_single_Pop_GDP_Wage.xlsx"
+    filepath = "test_data_single_Pop_GDP_Wage.xlsx"
 
     data = pd.read_excel(filepath)
     # 需要注意component的个数
@@ -610,4 +610,5 @@ if __name__ == "__main__":
 
     print(model.infer(4))
     
+
     print("评估结果:", model.output())
